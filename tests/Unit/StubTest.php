@@ -18,6 +18,6 @@ final class StubTest extends TestCase
 
         // Calling $stub->doSomething() will now return
         // 'foo'.
-        $this->assertSame('foo', $stub->doSomething());
+        $this->assertSame('foox', $stub->doSomething());
     }
 }

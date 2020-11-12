@@ -30,6 +30,12 @@ class Subject
         // Do something.
         // ...
 
+        if (is_array($this->observers)){
+            $this->logging();
+        } else {
+            $this->doSomethingBad();
+        }
+
         // Notify observers that we did something.
         $this->notify('something');
     }
@@ -49,4 +55,8 @@ class Subject
     }
 
     // Other methods.
+    public function logging()
+    {
+
+    }
 }
