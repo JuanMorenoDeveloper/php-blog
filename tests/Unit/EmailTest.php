@@ -8,7 +8,10 @@ use InvalidArgumentException;
 
 final class EmailTest extends TestCase
 {
-    public function testCanBeCreatedFromValidEmailAddress(): void
+    /**
+     * @test
+     */
+    public function givenString_whenFromString_thenGetEmailInstance(): void
     {
         $this->assertInstanceOf(
             Email::class,
